@@ -126,10 +126,10 @@ C:\Users\s200503\source\repos\IPC\CDDS_IPC_EntityEditor\EntityEditorApp.cpp(30,2
 C:\Users\s200503\source\repos\IPC\CDDS_IPC_EntityEditor\EntityEditorApp.cpp(31,20): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
 C:\Users\s200503\source\repos\IPC\CDDS_IPC_EntityEditor\EntityEditorApp.cpp(33,25): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
 C:\Users\s200503\source\repos\IPC\CDDS_IPC_EntityEditor\EntityEditorApp.cpp(34,28): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
-C:\Users\s200503\source\repos\IPC\CDDS_IPC_EntityEditor\EntityEditorApp.cpp(101,28): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
-C:\Users\s200503\source\repos\IPC\CDDS_IPC_EntityEditor\EntityEditorApp.cpp(104,28): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
-C:\Users\s200503\source\repos\IPC\CDDS_IPC_EntityEditor\EntityEditorApp.cpp(128,25): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
-C:\Users\s200503\source\repos\IPC\CDDS_IPC_EntityEditor\EntityEditorApp.cpp(131,25): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+C:\Users\s200503\source\repos\IPC\CDDS_IPC_EntityEditor\EntityEditorApp.cpp(103,28): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+C:\Users\s200503\source\repos\IPC\CDDS_IPC_EntityEditor\EntityEditorApp.cpp(106,28): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+C:\Users\s200503\source\repos\IPC\CDDS_IPC_EntityEditor\EntityEditorApp.cpp(130,25): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+C:\Users\s200503\source\repos\IPC\CDDS_IPC_EntityEditor\EntityEditorApp.cpp(133,25): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
   main.cpp
   Generating Code...
   CDDS_IPC_EntityEditor.vcxproj -> C:\Users\s200503\source\repos\IPC\bin\Win32\Debug\CDDS_IPC_EntityEditor.exe

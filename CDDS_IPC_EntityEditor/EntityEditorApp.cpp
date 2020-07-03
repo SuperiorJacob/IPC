@@ -58,6 +58,8 @@ void EntityEditorApp::Shutdown() {
 	CloseWindow();        // Close window and OpenGL context
 	CloseHandle(fileHandleData);
 	CloseHandle(fileHandleSize);
+	UnmapViewOfFile(data);
+	UnmapViewOfFile(size);
 }
 
 void EntityEditorApp::Update(float deltaTime) {
@@ -68,10 +70,10 @@ void EntityEditorApp::Update(float deltaTime) {
 
 	*size = ENTITY_COUNT;
 
-	memcpy(data, m_entities, sizeof(Entity) * ENTITY_COUNT);
-
-	UnmapViewOfFile(data);
-	UnmapViewOfFile(size);
+	for (int i = 0; i < ENTITY_COUNT; i++)
+	{
+		data[i] = m_entities[i];
+	}
 	//
 
 	// select an entity to edit

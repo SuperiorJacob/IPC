@@ -30,8 +30,8 @@ protected:
 
 	HANDLE fileHandleData = nullptr;
 	HANDLE fileHandleSize = nullptr;
-	Entity* entities;
-	int* size;
+	Entity* entities = nullptr;
+	int* size = nullptr;
 	// an array of an unknown number of entities
 	std::vector<Entity> m_entities;
 };

@@ -21,6 +21,8 @@ bool EntityDisplayApp::Startup() {
 
 	size = (int*)MapViewOfFile(fileHandleSize, FILE_MAP_ALL_ACCESS, 0, 0, sizeof(int));
 
+	if (size == nullptr) return false;
+
 	entities = (Entity*)MapViewOfFile(fileHandleData, FILE_MAP_ALL_ACCESS, 0, 0, sizeof(Entity) * *size);
 
 	for (int i = 0; i < *size; i++)
@@ -39,12 +41,11 @@ void EntityDisplayApp::Shutdown() {
 	CloseHandle(fileHandleSize);
 	UnmapViewOfFile(entities);
 	UnmapViewOfFile(size);
-
-	delete &m_entities;
 }
 
 void EntityDisplayApp::Update(float deltaTime) {
-	
+	if (size == nullptr) return;
+
 	for (int i = 0; i < *size; i++)
 	{
 		m_entities[i] = entities[i];
